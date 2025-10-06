@@ -22,4 +22,4 @@ Each project includes **files, structure, and live demo links** where available.
 
 ---
 
-> ⚡ Tip: You can add more projects by copying the table row format and including new features and live links.
+> ⚡ Othe projects will update soon.......
