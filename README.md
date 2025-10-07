@@ -9,8 +9,8 @@ Each project includes **files, structure, and live demo links** where available.
 
 | Project Name | Contents / Features | Live Demo |
 |--------------|-------------------|-----------|
-| 🎉 Event Website | Upcoming events, event descriptions, images & gallery, cloth & food ads, contact info, free entry/food highlights, responsive layout ||
-| Perfum Website   | Perfumy is a simple and stylish perfume website featuring product displays, a search bar, an About section, and contact details for easy navigation and a smooth user experience.|
+| 🎉 Event Website | Upcoming events, event descriptions, images & gallery, cloth & food ads, contact info, free entry/food highlights, responsive layout |https://event1239.neocities.org/Event/Front_End||
+| Perfum Website   | Perfumy is a simple and stylish perfume website featuring product displays, a search bar, an About section, and contact details for easy navigation and a smooth user experience.|https://event1239.neocities.org/PERFUMY%20PROJECT/
 
 ---
 
