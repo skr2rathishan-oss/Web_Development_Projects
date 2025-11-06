@@ -1,0 +1,95 @@
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Application Form</title>
+</head>
+<body>
+    <h1 id="one">Application Form</h1>
+    <form class="form">
+        <table class="table">
+            <tr>
+                <td class="data"><label for="name">Name:</label></td>
+                <td class="data"><input type="text" id="name" name="name" required></td>
+            </tr>
+            <tr>
+                <td class="data"><label for="age">Age:</label></td>
+                <td class="data"><input type="number" id="age" name="age" min="1" required></td>
+            </tr>
+            <tr>
+                <td class="data"><label>Gender:</label></td>
+                <td class="data">
+                    <input type="radio" id="male" name="gender" value="Male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td class="data"><label for="course">Select Course:</label></td>
+                <td class="data">
+                    <select id="course" name="course" required>
+                        <option value="">--Select a course--</option>
+                        <option value="C++">C++</option>
+                        <option value="Python">Python</option>
+                        <option value="Java">Java</option>
+                        <option value="Web">Web Development</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="data"><label for="email">Email:</label></td>
+                <td class="data"><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="submit-cell">
+                    <input type="submit" value="Save" onclick="Add(event)">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <br><br>
+
+    <table class="table1" id="table1">
+        <tr>
+            <th class="data">Name</th>
+            <th class="data">Age</th>
+            <th class="data">Gender</th>
+            <th class="data">Course</th>
+            <th class="data">Email</th>
+            <th class="data">Action</th>
+        </tr>
+    </table>
+
+    <script>
+        function Add(event) {
+            event.preventDefault(); 
+
+            var Name = document.getElementById("name").value;
+            var Age = document.getElementById("age").value;
+            var Course = document.getElementById("course").value;
+            var Email = document.getElementById("email").value;
+            var Gender = document.querySelector('input[name="gender"]:checked');
+            var GenderValue = Gender ? Gender.value : "Not selected"; 
+
+            var t_data = document.createElement("tr");
+            t_data.innerHTML =
+                "<td class='data'>" + Name + "</td>" +
+                "<td class='data'>" + Age + "</td>" +
+                "<td class='data'>" + GenderValue + "</td>" +
+                "<td class='data'>" + Course + "</td>" +
+                "<td class='data'>" + Email + "</td>" +
+                "<td class='data'><button onclick='Deleteitem(event)'>Delete</button></td>";
+
+            document.getElementById("table1").appendChild(t_data);
+            document.querySelector('.form').reset();
+        }
+
+        function Deleteitem(event) {
+            var button = event.target;
+            var row = button.closest("tr");
+            row.remove();
+        }
+    </script>
+</body>
+</html>

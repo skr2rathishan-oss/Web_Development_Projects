@@ -1,0 +1,110 @@
+.data {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+.form {
+  width: 500px;
+  padding: 10px;
+  border: 1px solid black;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.submit-cell {
+  text-align: center;
+  padding: 15px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.table1 {
+  width: 50%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-left: 25%;
+}
+.one{
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin-bottom: 20px;
+    underline: True;
+}
+body {
+  background: linear-gradient(120deg, #f8fafc 0%, #e0e7ef 100%);
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.form {
+  background: #f4f8fb;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+.table, .table1 {
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.05);
+}
+
+th {
+  background: #e3eaf2;
+  font-weight: 600;
+}
+
+tr:hover td {
+  background: #f0f6ff;
+}
+
+.data {
+  font-size: 15px;
+}
+
+.submit-cell {
+  background: none;
+}
+
+#one {
+  font-size: 2.2em;
+  letter-spacing: 1px;
+  color: #2a3d5c;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.07);
+  margin-top: 30px;
+  margin-left:40%;
+  margin-bottom: 30px;
+  text-decoration: underline;
+}
