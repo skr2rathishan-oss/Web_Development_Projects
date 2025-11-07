@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BookSky - Your personal digital library. Organize and manage your favorite books in one place.">
+    <title>BookSky - Your Digital Library</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Meera+Inimai&family=Montserrat&family=Noto+Sans+Tamil:wght@100..900&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <h1 class="logo">📚 BookSky</h1>
+            <p class="tagline">Your Personal Digital Library</p>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container" id="container">
+            <div class="sub-container">
+                <div class="book-header">
+                    <h2>Rich Dad Poor Dad</h2>
+                    <span class="book-badge">Featured</span>
+                </div>
+                <h6 class="author">Robert Kiyosaki</h6>
+                <p class="description">Rich Dad Poor Dad is a book by Robert Kiyosaki and Sharon Lechter. It is a book about the power of money
+                    and how to make money.</p>
+                <button class="delete-btn">Delete</button>
+            </div>
+        </div>
+    </main>
+
+    <button class="add-button" id="popup-button" aria-label="Add new book">
+        <span class="plus-icon">+</span>
+    </button>
+
+    <div class="popup-overlay" id="popup-overlay">
+        <div class="popup" id="popup-add">
+            <div class="popup-header">
+                <h2>Add New Book</h2>
+                <button class="close-btn" id="close-popup">&times;</button>
+            </div>
+            <form class="book-form" id="book-form">
+                <div class="input-group">
+                    <input type="text" placeholder="Book Title" id="book-title" required>
+                </div>
+                <div class="input-group">
+                    <input type="text" placeholder="Author Name" id="book-author" required>
+                </div>
+                <div class="input-group">
+                    <textarea placeholder="Book Description" id="book-description" rows="4" required></textarea>
+                </div>
+                <div class="form-buttons">
+                    <button type="button" class="cancel-button" id="cancel-button">Cancel</button>
+                    <button type="submit" class="submit-button" id="submit-button">Add Book</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
