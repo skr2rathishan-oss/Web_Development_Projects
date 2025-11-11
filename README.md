@@ -9,6 +9,7 @@ Each project includes **files, structure, and live demo links** where available.
 
 | Project Name | Contents / Features | Live Demo |
 |--------------|-------------------|-----------|
+|Nostra E-Commerce | Nostra is a modern online fashion store showcasing trendy, high-quality apparel. It features new arrivals, a responsive design, dark-mode toggle, customer-focused sections, and newsletter signup for an engaging shopping experience.|https://event1239.neocities.org/E-Commerce/
 |Booksky | BookSky is a simple digital library web app built with HTML, CSS, and JavaScript. It lets users add, view, and delete books using a clean popup interface with smooth animations and responsive design.|https://event1239.neocities.org/Booksky/
 |Application From | This project is a simple web-based Application Form created using HTML, CSS, and JavaScript. It allows users to enter their personal details such as name, age, gender, course, and email, and displays the information in a table below the form. Users can also delete any record from the table. The project demonstrates basic DOM manipulation, form handling, and event-driven programming in JavaScript.|https://event1239.neocities.org/ApplicationForm/Index
 | Event Website | Upcoming events, event descriptions, images & gallery, cloth & food ads, contact info, free entry/food highlights, responsive layout |https://event1239.neocities.org/Event/Front_End||
