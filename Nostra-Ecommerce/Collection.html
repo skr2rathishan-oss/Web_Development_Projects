@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra | Products Collection</title>
+    <meta name="description" content="Browse Nostra's products. Filter by color and search white or black shirts.">
+    <meta name="theme-color" content="#1d232c">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Nostra | Products Collection">
+    <meta property="og:description" content="Shop white and black shirts with easy search and filters.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="Collection.html">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=1200&h=630&fit=crop">
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Meera+Inimai&family=Montserrat&family=Noto+Sans+Tamil:wght@100..900&family=Poppins&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <h1>Nostra</h1>
+        <div class="navbar-links">
+            <p class="navbar-link"><a href="index.html">Home</a></p>
+            <p class="navbar-link"><a href="Collection.html" aria-current="page">Products</a></p>
+            <p class="navbar-link"><a href="index.html#contact">Contact</a></p>
+        </div>
+        <div style="display:flex;align-items:center;gap:8px;">
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+            <i class="fas fa-bars" id="menu-icon" onclick="Openmenu()"></i>
+        </div>
+    </nav>
+    <!--sidenavbar-->
+    <div class="sidenavbar">
+        <i class="fas fa-times" id="close-icon" onclick="Closemenu()"></i>
+        <div class="sidenavbar-links">
+            <a href="index.html">Home</a>
+            <a href="Collection.html">Products</a>
+            <a href="#footer">Contact</a>
+        </div>
+    </div>
+    <div id="overlay" class="overlay" onclick="Closemenu()" aria-hidden="true"></div>
+
+    <!-- Products Page -->
+    <div class="products-page">
+        <aside class="products-sidebar">
+            <h3>Search</h3>
+            <input type="text" id="product-search" placeholder="Search products...">
+
+            <h3 style="margin-top:20px;">Filter by Color</h3>
+            <div class="filter-group">
+                <label class="filter-option">
+                    <input type="checkbox" class="color-filter" value="white" checked>
+                    White Shirts
+                </label>
+                <label class="filter-option">
+                    <input type="checkbox" class="color-filter" value="black" checked>
+                    Black Shirts
+                </label>
+            </div>
+        </aside>
+
+        <section class="products-content">
+            <div class="products-toolbar">
+                <h2>Products</h2>
+                <div class="products-controls">
+                    <span id="results-count" aria-live="polite"></span>
+                    <label for="sort-select" class="visually-hidden">Sort products</label>
+                    <select id="sort-select" aria-label="Sort products">
+                        <option value="relevance">Sort: Relevance</option>
+                        <option value="name-asc">Name: A to Z</option>
+                        <option value="name-desc">Name: Z to A</option>
+                        <option value="color">Color</option>
+                    </select>
+                </div>
+            </div>
+            <div id="products-grid" class="products-grid">
+                <div class="product-card" data-title="Classic White Shirt" data-color="white" data-price="29">
+                    <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=400&h=400&fit=crop" alt="Classic White Shirt" loading="lazy">
+                    <h4>Classic White Shirt</h4>
+                    <p>Color: White</p>
+                    <p class="price">$29</p>
+                    <button class="btn-primary">Add to Cart</button>
+                </div>
+                <div class="product-card" data-title="Slim Fit Black Shirt" data-color="black" data-price="35">
+                    <img src="https://images.unsplash.com/photo-1520975916090-3105956dac38?w=400&h=400&fit=crop" alt="Slim Fit Black Shirt" loading="lazy">
+                    <h4>Slim Fit Black Shirt</h4>
+                    <p>Color: Black</p>
+                    <p class="price">$35</p>
+                    <button class="btn-primary">Add to Cart</button>
+                </div>
+                <div class="product-card" data-title="White Linen Shirt" data-color="white" data-price="39">
+                    <img src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=400&h=400&fit=crop" alt="White Linen Shirt" loading="lazy">
+                    <h4>White Linen Shirt</h4>
+                    <p>Color: White</p>
+                    <p class="price">$39</p>
+                    <button class="btn-primary">Add to Cart</button>
+                </div>
+                <div class="product-card" data-title="Black Formal Shirt" data-color="black" data-price="45">
+                    <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=400&h=400&fit=crop" alt="Black Formal Shirt" loading="lazy">
+                    <h4>Black Formal Shirt</h4>
+                    <p>Color: Black</p>
+                    <p class="price">$45</p>
+                    <button class="btn-primary">Add to Cart</button>
+                </div>
+            </div>
+            <p id="no-results" style="display:none;margin-top:10px;">No products match your search.</p>
+        </section>
+    </div>
+ 
+
+
+    <!--Footer-->
+    <div class="Footer" id="footer">
+        <h2>Nostra</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum, illo?</p>
+        <i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-twitter"></i><i class="fa-brands fa-facebook"></i>
+        <p>@Nostra2025.com</p>
+        <p>&copy; 2024 Nostra. All rights reserved.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

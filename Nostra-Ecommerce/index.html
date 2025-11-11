@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra | Trendy Fashion & Quality Apparel</title>
+    <meta name="description" content="Nostra offers quality apparel, featuring new arrivals and most featured products. Shop white and black shirts and more.">
+    <meta name="theme-color" content="#1d232c">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Nostra | Trendy Fashion & Quality Apparel">
+    <meta property="og:description" content="Discover new arrivals and featured products at Nostra.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="index.html">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=1200&h=630&fit=crop">
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Meera+Inimai&family=Montserrat&family=Noto+Sans+Tamil:wght@100..900&family=Poppins&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <h1>Nostra</h1>
+        <div class="navbar-links">
+            <p class="navbar-link"><a href="index.html" aria-current="page">Home</a></p>
+            <p class="navbar-link"><a href="Collection.html">Products</a></p>
+            <p class="navbar-link"><a href="#contact">Contact</a></p>
+        </div>
+        <div style="display:flex;align-items:center;gap:8px;">
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+            <i class="fas fa-bars" id="menu-icon" onclick="Openmenu()"></i>
+        </div>
+    </nav>
+    <!--sidenavbar-->
+    <div class="sidenavbar">
+        <i class="fas fa-times" id="close-icon" onclick="Closemenu()"></i>
+        <div class="sidenavbar-links">
+            <a href="index.html">Home</a>
+            <a href="Collection.html">Products</a>
+            <a href="#footer">Contact</a>
+        </div>
+    </div>
+    <div id="overlay" class="overlay" onclick="Closemenu()" aria-hidden="true"></div>
+
+    <!--header-->
+    <div class="header">
+        <div class="header-content1">
+            <h1>Welcome to Nostra</h1>
+            <p>Your one-stop shop for all your needs!</p>
+            <a href="Collection.html" class="header-button" aria-label="Shop now and view products">Shop Now</a>
+        </div>
+        <div>
+            <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?w=400&h=300&fit=crop" alt="Header Image" loading="lazy">
+        </div>
+    </div>
+
+    <!--Services-->
+    <div>
+        <div class="Service">
+            <div class="Services-container1">
+                <h2>We provide Best Customer Experience</h2>
+                <p>|| We ensure that our customer have the best customer Experience</p>
+            </div>
+        </div>
+    </div>
+    <div class="service2">
+        <div class="Services-container2">
+            <i class="fa-regular fa-face-smile"></i>
+            <h4>Quality Products</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem placeat eveniet cupiditate nam vero,
+                recusandae, excepturi animi eaque consequatur eius perspiciatis reiciendis pariatur necessitatibus odio
+                corrupti consequuntur. Reprehenderit, itaque nesciunt.</p>
+        </div>
+        <div class="Services-container3">
+            <i class="fa-regular fa-face-smile"></i>
+            <h4>Quality Products</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem placeat eveniet cupiditate nam vero,
+                recusandae, excepturi animi eaque consequatur eius perspiciatis reiciendis pariatur necessitatibus odio
+                corrupti consequuntur. Reprehenderit, itaque nesciunt.</p>
+        </div>
+        <div class="Services-container4">
+            <i class="fa-regular fa-face-smile"></i>
+            <h4>Quality Products</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem placeat eveniet cupiditate nam vero,
+                recusandae, excepturi animi eaque consequatur eius perspiciatis reiciendis pariatur necessitatibus odio
+                corrupti consequuntur. Reprehenderit, itaque nesciunt.</p>
+        </div>
+    </div>
+    </div>
+
+    <!--New Arrival-->
+
+    <div class="New-Arrival">
+        <h2 style="padding:20px;">New Arrival</h2>
+        <div>
+            <div class="New-Arrival-images">
+                <div class="arrival-item">
+                    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=300&h=300&fit=crop" alt="New Arrival Product 1">
+                    <button> Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+                <div class="arrival-item">
+                    <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=300&h=300&fit=crop" alt="New Arrival Product 2">
+                    <button> Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+                <div class="arrival-item">
+                    <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=300&h=300&fit=crop" alt="New Arrival Product 3">
+                    <button> Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+                <div class="arrival-item">
+                    <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=300&h=300&fit=crop" alt="New Arrival Product 3">
+                    <button> Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Most Featured-->
+    <div class="Most-Featured">
+        <h2 style="padding:20px;">Most Fetured</h2>
+        <div>
+            <div class="New-Arrival-images">
+                <div class="arrival-item">
+                    <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=300&h=300&fit=crop" alt="Most Featured Product 1">
+                    <button> Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+                <div class="arrival-item">
+                    <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=300&h=300&fit=crop" alt="Most Featured Product 2">
+                    <button> Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+                <div class="arrival-item">
+                    <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?w=300&h=300&fit=crop" alt="Most Featured Product 3">
+                    <button> Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+                <div class="arrival-item">
+                    <img src="https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?w=300&h=300&fit=crop" alt="Most Featured Product 4">
+                    <button> Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--News Letter-->
+    <div class="News-Section">
+        <h2>Join Our News-Letter</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem ipsa repellendus accusantium quas ducimus
+            vero beatae, sit similique possimus. Dolores?
+        </p>
+        <div class="input">
+            <input type="email" id="email">
+            <button>Subscribe</button>
+        </div>
+
+    </div>
+
+    <!--Footer-->
+   
+
+    <div class="Footer" id="footer">
+        <h2>Nostra</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum, illo?</p>
+        <i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-twitter"></i><i class="fa-brands fa-facebook"></i>
+        <p>@Nostra2025.com</p>
+        <p>&copy; 2024 Nostra. All rights reserved.</p>
+    </div>
+    <button id="back-to-top" title="Back to top">↑</button>
+    <script src="script.js"></script>
+</body>
+
+</html>
